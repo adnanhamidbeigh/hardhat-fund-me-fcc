@@ -1,0 +1,37 @@
+{
+  "devDependencies": {
+    "@chainlink/contracts": "^0.8.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@typechain/ethers-v6": "^0.4.0",
+    "@typechain/hardhat": "^8.0.0",
+    "@types/sinon-chai": "^3.2.3",
+    "chai": "^4.2.0",
+    "dotenv": "^16.3.1",
+    "ethereum-waffle": "*",
+    "ethers": "^6.8.0",
+    "hardhat": "^2.18.1",
+    "hardhat-deploy": "^0.11.42",
+    "hardhat-deploy-ethers": "^0.4.1",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solhint": "^3.6.2",
+    "solidity-coverage": "^0.8.0",
+    "typechain": "^8.1.0"
+  },
+  "scripts": {
+    "test": "yarn hardhat test",
+    "test:staging": "yarn hardhat test --network sepolia",
+    "lint": "yarn solhint 'contracts/*.sol'",
+    "lint:fix": "yarn solhint 'contracts/*.sol' --fix",
+    "coverage": "yarn coverage"
+  },
+  "name": "hardhat-fund-me-fcc",
+  "version": "1.0.0",
+  "author": "Adnan Hamid",
+  "license": "MIT"
+}
